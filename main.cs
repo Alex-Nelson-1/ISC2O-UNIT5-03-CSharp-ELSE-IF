@@ -22,19 +22,19 @@ class Program
             Console.WriteLine("NOT POSSIBLE!");
         }
         //Procces
-        else if (age > 17) 
+        else if (age > 17)
         {
             //Output
             Console.WriteLine("You can watch R rated movies");
         }
         //Procces
-        else if (age > 12) 
+        else if (age > 12)
         {
             //Output
             Console.WriteLine("You can watch PG-13 movies");
         }
         //Procces
-        else if (age < 13) 
+        else if (age < 13)
         {
             //Output
             Console.WriteLine("You can watch G rated movies");
@@ -42,7 +42,7 @@ class Program
         //Output
         else
         {
-        Console.WriteLine("Invalid Input.");
+            Console.WriteLine("Invalid Input.");
         }
         Console.WriteLine("\nDone");
     }
