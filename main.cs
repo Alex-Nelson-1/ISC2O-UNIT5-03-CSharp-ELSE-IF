@@ -1,7 +1,7 @@
 // Created by: Alex Nelson
-// Created on: Oct 2022
+// Created on: Nov 2022
 //
-// This program calculates area of a triangle
+// This program tells you which age range of movies you can
 using System;
 
 class Program
@@ -9,19 +9,41 @@ class Program
     public static void Main(string[] args)
     {
         //Input
-        int length;
-        int width;
-        int area;
-        Console.WriteLine("This program calculates the area of a triangle");
+        Console.WriteLine("This program Tells you which age range of movies you can");
         Console.WriteLine("");
-        Console.WriteLine("Enter length in cm: ");
-        length = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Enter width in cm: ");
-        width = Convert.ToInt32(Console.ReadLine());
-        area = length * width / 2;
+        Console.WriteLine("Please enter your age.");
+        int age = Convert.ToInt32(Console.ReadLine());
+        //Procces
+        Console.WriteLine("");
+        //Procces
+        if (age > 122)
+        {
+            //Output
+            Console.WriteLine("NOT POSSIBLE!");
+        }
+        //Procces
+        else if (age > 17) 
+        {
+            //Output
+            Console.WriteLine("You can watch R rated movies");
+        }
+        //Procces
+        else if (age > 12) 
+        {
+            //Output
+            Console.WriteLine("You can watch PG-13 movies");
+        }
+        //Procces
+        else if (age < 13) 
+        {
+            //Output
+            Console.WriteLine("You can watch G rated movies");
+        }
         //Output
-        Console.WriteLine("");
-        Console.WriteLine("The area is: " + area + " cm²");
+        else
+        {
+        Console.WriteLine("Invalid Input.");
+        }
         Console.WriteLine("\nDone");
     }
 }
